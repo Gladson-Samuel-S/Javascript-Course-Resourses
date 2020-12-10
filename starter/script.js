@@ -161,7 +161,7 @@ if (bmiMark > bmiJohn) {
 } else {
     console.log(`John's bmi is higher than Mark's`);
 }
-*/
+
 const inputYear = "1991";
 console.log(Number(inputYear), inputYear);
 console.log(Number(inputYear) + 18);
@@ -170,3 +170,85 @@ console.log(Number('jonas'));
 
 console.log('23' - '50' - 2);
 console.log('25' > '123');
+
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Gladson'));
+
+const money = 0;
+if (money) {
+    console.log("Don't spend it all ");
+} else {
+    console.log("Do something to earn");
+}
+
+let height = 0;
+if (height) {
+    console.log(`height is defined`);
+} else {
+    console.log(`height is UNDEFINED`);
+}
+
+
+const age = 18;
+if (age === 18)
+    console.log(`you are an adult`);
+
+if (age == 18)
+    console.log(`you are an adult lol`);
+
+const favorite = Number(prompt("What is your favorite number"));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 18) {
+    console.log(`cool 18 is cool number`);
+} else if (favorite === 9) {
+    console.log(`cool 9 is also a cool number`);
+} else {
+    console.log(`any number is cool`);
+}
+
+
+const age = 18;
+if (age >= 20 | age < 30) {
+    console.log(`rejakljelj`);
+}
+
+
+const hasDeriverslicense = true;
+const hasGoodVision = false;
+
+console.log(hasDeriverslicense && hasGoodVision);
+console.log(hasDeriverslicense || hasGoodVision);
+console.log(!hasDeriverslicense);
+
+const shouldDrive = hasDeriv  erslicense && hasGoodVision;
+if (hasDeriverslicense && hasGoodVision) {
+    console.log(`Sarah can drive`);
+}
+
+*/
+
+
+// Dolphins vs Koalas
+
+// test data
+// Dolphins 97,108,89
+//koalas 88,91,110
+
+const averageScoreDo = (97 + 112 + 101) / 3;
+const averageScoreKo = (109 + 95 + 106) / 3;
+
+console.log(averageScoreDo, averageScoreKo);
+
+if (averageScoreDo > averageScoreKo && averageScoreDo >= 100) {
+    console.log(`Dolphins are the winners`);
+} else if (averageScoreKo > averageScoreDo && averageScoreKo >= 100) {
+    console.log(`Koalas are the winners`);
+} else if (averageScoreDo == averageScoreKo && averageScoreDo >= 100 && averageScoreKo >= 100) {
+    console.log(`It is a Draw`);
+} else {
+    console.log(`no one wins`);
+}
